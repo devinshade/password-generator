@@ -1,26 +1,20 @@
 // Assignment code here
 
-// ! TODO: Define 'generatePassword' function
-// ! TODO: Assign value to 'password' to be returned
-// TODO: Add series of prompts for password criteria
-  // 1. Password length = 8-128 characters
-  // 2. Lowercase, uppercase, numbers, special characters
-// TODO: Validate the above input criteria
-// TODO: Generate password based on criteria
-
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
+// ! TODO: Assign values to be returned
 // Input variables
 var input = [""]
 var uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 var lowercase = "abcdefghijklmnopqrstuvwxyz"
-var numbers = "0123456789"
 var special = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~"
-var randomPassword = ""
+var numbers = "0123456789"
 
+// ! TODO: Define 'generatePassword' function
 function generatePassword() {
   console.log("Confirm button click works");
+// ! TODO: Add series of prompts for password criteria
 // 1. Password length = 8-128 characters
   var passwordLength = prompt("Choose password length from 8-128 characters:");
 // Validate password length
@@ -38,18 +32,53 @@ function generatePassword() {
       console.log(input);
     }
 
-    var includeUppercase = confirm("Include uppercase characters?")
+    var includeUppercase = confirm("Include uppercase characters?");
     // confirm uppercase
     if (includeUppercase === true) {
       for (var i = 0; i < uppercase.length; i++) {
         input.push(uppercase[i]);
       }
-      console.log(input)
+      console.log(input);
     }
 
-// ! TODO: Display password in box
-  return "Generated password will go here"
-}
+    var includeSpecial = confirm("Include special characters?");
+    // confirm special
+    if (includeSpecial === true) {
+      for (var i = 0; i < special.length; i++) {
+        input.push(special[i]);
+      }
+      console.log(input);
+    }
+
+    var includeNumbers = confirm("Include numbers?");
+    // confirm numbers
+    if (includeNumbers === true) {
+      for (var i = 0; i < numbers.length; i++) {
+        input.push(numbers[i]);
+      }
+      console.log(input);
+    }
+
+    // ! TODO: Validate the above input criteria
+    if (includeUppercase === false && includeLowercase === false && includeSpecial === false && includeSpecial === false) {
+      alert("Password must include at least 1 character option.");
+
+      return;
+    }
+
+    // ! TODO: Generate password based on criteria
+    var randomPassword = ""
+    const confirmLength = parseInt(passwordLength);
+    for (var i = 0; i <confirmLength; i++) {
+      input[
+        Math.floor(Math.random() * input.length)];
+
+        randomPassword += input[
+          Math.floor(Math.random() * input.length)];
+    }
+    // ! TODO: Display password in box
+    return randomPassword;
+  }
 
 // Write password to the #password input
 function writePassword() {
