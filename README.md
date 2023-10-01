@@ -40,3 +40,14 @@ WHEN the password is generated
 
 THEN the password is either displayed in an alert or written to the page
 
+# Usage
+
+<!-- screenshot of finished page -->
+
+# Credits
+
+University of Texas provided starter code.
+
+# Tests
+
+Use site to generate a random, secure password with custom criteria.
