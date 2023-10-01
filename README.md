@@ -48,6 +48,8 @@ THEN the password is either displayed in an alert or written to the page
 
 University of Texas provided starter code.
 
+YouTube: [Homework Startup Guide - Javascript Password Generator by Paul Keldsen](https://www.youtube.com/watch?v=x4HUaiazDes)
+
 # Tests
 
 Use site to generate a random, secure password with custom criteria.
