@@ -42,6 +42,8 @@ THEN the password is either displayed in an alert or written to the page
 
 # Usage
 
+[Deployed Page](https://devinshade.github.io/password-generator/)<br>
+[GitHub Link](https://github.com/devinshade/password-generator)
 ![image](./assets/Screenshot%202023-10-01%20at%204.09.12 PM.png)
 ![image](./assets/Screenshot%202023-10-01%20at%204.09.36 PM.png)
 
