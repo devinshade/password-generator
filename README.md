@@ -1,6 +1,6 @@
 # Password Generator
 
- # User Story
+ ## User Story
 
 AS AN employee with access to sensitive data
 
@@ -8,7 +8,7 @@ I WANT to randomly generate a password that meets certain criteria
 
 SO THAT I can create a strong password that provides greater security
 
- # Acceptance Criteria
+ ## Acceptance Criteria
 
 GIVEN I need a new, secure password
 
@@ -40,19 +40,19 @@ WHEN the password is generated
 
 THEN the password is either displayed in an alert or written to the page
 
-# Usage
+## Usage
 
 [Deployed Page](https://devinshade.github.io/password-generator/)<br>
 [GitHub Link](https://github.com/devinshade/password-generator)
 ![image](./assets/Screenshot%202023-10-01%20at%204.09.12 PM.png)
 ![image](./assets/Screenshot%202023-10-01%20at%204.09.36 PM.png)
 
-# Credits
+## Credits
 
 University of Texas provided starter code.
 
 YouTube: [Homework Startup Guide - Javascript Password Generator by Paul Keldsen](https://www.youtube.com/watch?v=x4HUaiazDes)
 
-# Tests
+## Tests
 
 Use site to generate a random, secure password with custom criteria.
